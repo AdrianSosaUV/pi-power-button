@@ -123,5 +123,10 @@ Si aun asi te quieres deshacerte de todo esto bastara con borrar la carpeta con 
 
 	sudo rm -r -f pi-power-button
 
+__________________________________
 
+tome como referencia esta [guia](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi), y me modifique un monton de cosas.
+
+Hice esta guía a petición de un usuario de instagram: [Álvaro Otero](https://www.instagram.com/alvarotero_007/)
+Espero te sirva a ti y a mucha gente! 
 
