@@ -23,14 +23,6 @@ sudo chmod +x /usr/local/bin/shutdown_button.py
 
 
 echo '#! /bin/sh
- 
-### BEGIN INIT INFO
-# Provides:          shutdown_button.py
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-### END INIT INFO
 
 NAME=shutdown_button
 DESC="Servicio de boton de Inicio/apagado"
@@ -87,10 +79,7 @@ sudo systemctl start shutdown_button
 
 echo "==>> Limpiando instalación <<==\n"
 
-PATH =$(pwd)
-Full_PATH = "$PATH/pi-power-button"
-cd $Full_PATH
-sudo rm -r imagenes/
-suro rm -f .gitignore README.md 
+sudo rm -r imagenes/ .git 
+sudo rm .gitignore README.md 
 
 
