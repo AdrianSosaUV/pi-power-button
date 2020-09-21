@@ -1,7 +1,7 @@
 #! /bin/sh
 
 set -e 
-
+clear && reset 
 echo "==>> Instalando Botón de encendido <<==\n"
 echo "#!/usr/bin/python
 
@@ -75,10 +75,8 @@ echo "==>> Activando botón de encendido <<==\n"
 
 sudo systemctl daemon-reload
 sudo service shutdown_button start 
-sudo systemctl enable shutdown_button
-VAR = $(sudo systemctl is-enabled shutdown_button)
-echo ${VAR}
 
+#sudo systemctl is-enabled shutdown_button
 
 echo "==>> Limpiando instalación <<==\n"
 
