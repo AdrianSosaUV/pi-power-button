@@ -40,10 +40,10 @@ Si deseas puedes hacer un botón las estetico soldandolo y poniendole Thermofill
 
 Esta es la parte interesante, aqui el archivo de instalacion creara un script de python que se encargara de dar la isntrucción de apagar la RPI cuando sea oprimido el botón y la reactivara cuando se oprima de nuevo, en si nunca se apaga, solo entra en un modo de ultra bajo consumo ( tipo hibernación).
 
-## Conexión
+### Conexión
 
 Para conectar los pines correctamente debemos consultar la [documentación oficial](https://www.raspberrypi.org/documentation/usage/gpio/README.md "GPIO").
-Una manera de verificar nuestras conexiones es usando el comando 'pinout' que nos dejara ver (en la consola) una imagen de nuestra RPI, modelo y características de la misma, y por ultimo lo que mas nos importa, una lista de los pines.
+Una manera de verificar nuestras conexiones es usando el comando `pinout` que nos dejara ver (en la consola) una imagen de nuestra RPI, modelo y características de la misma, y por ultimo lo que mas nos importa, una lista de los pines.
 
 ![pinout](https://raw.githubusercontent.com/AdrianSosaUV/pi-power-button/master/imagenes/pinout.png)
 
@@ -61,4 +61,4 @@ De esta manera estaremos instalando la herramienta necesaria para desplegar la i
 
 Es recomendable consultar la información oficial de cada raspberry, debido a que cada GPIO pin tiene una función especifica, y podriamos hacer algo que no nos agrade totalmente.
 
-El siguiente paso es descargar el archivo de instalación, para ello vamos a copiar este repositorio en la RPI, los siguientes pasos van a instalar git y descargar el repo en la carpeta '/home/pi/'
+El siguiente paso es descargar el archivo de instalación, para ello vamos a copiar este repositorio en la RPI, los siguientes pasos van a instalar git y descargar el repo en la carpeta */home/pi/*
