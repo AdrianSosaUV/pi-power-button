@@ -25,7 +25,7 @@ opcional:
 
 ![Conexión Protoboard](https://raw.githubusercontent.com/AdrianSosaUV/pi-power-button/master/imagenes/protoboard.jpg)
 
-* Despues lo conectamos a dos terminales del GPIO ( no cualquiera, en la sección de Software estaran los pines disponibles), en mi caso utilize los pines 5 y 6 (GPIO 3 y GND respectivamente).
+* Despues lo conectamos a dos terminales del GPIO ( no cualquiera, en la sección de Software estaran los pines disponibles), en mi caso utilize los pines 5 y 6 (GPIO 3 y GND respectivamente).(en la foto estan mal conectados >.<)
 
 ![Conexión GPIO](https://raw.githubusercontent.com/AdrianSosaUV/pi-power-button/master/imagenes/rpi-connect.jpg)
 
