@@ -38,7 +38,7 @@ Si deseas puedes hacer un botón las estetico soldandolo y poniendole Thermofill
 
 ## Software:
 
-Esta es la parte interesante, aqui el archivo de instalacion creara un script de python que se encargara de dar la isntrucción de apagar la RPI cuando sea oprimido el botón y la reactivara cuando se oprima de nuevo, en si nunca se apaga, solo entra en un modo de ultra bajo consumo ( tipo hibernación).
+Esta es la parte interesante, aqui el archivo de instalacion creara un script de python que se encargara de dar la instrucción de apagar la RPI cuando sea oprimido el botón y la reactivara cuando se oprima de nuevo, en si nunca se apaga, solo entra en un modo de ultra bajo consumo ( tipo hibernación).
 
 _nota:_
 Apartir de aqui todo es en la consola
@@ -77,7 +77,7 @@ Ahora que ya tenemos el repositorio en nuestra RPI entramos en el.
 
 Para instalar el programa basta con tipear el siguiente comando:
 	
-	bash instal.sh
+	bash install.sh
 
 Ahora viene lo mas dificil de todo el procedimiento, es decidir que botana nos acompañara durante el largo y tedioso tiempo de instalación (aprox 40 seg.) Solito hara todo lo necesario para instalar el programa y que quede a punto.
 
@@ -107,16 +107,19 @@ Aqui dejo algunos comandos para que comiences a probar:
 |  		enable   | Active start the service  |
 | 		disable  | Disables the startup service |
 
+el formato es el siguiente:
+
+	sudo systemctl <comando> shutdown_button
 
 _nota:_
 
-Algunos servicios son muy importantes, si jugamos con alguno elemental podriamos hacer que la *RPI* deje de funcionar ( nada del otro mundo solo basta con volver a cargar *Raspbian* a la sd y listo), mi remomendación es solo jugar con el que creamos en este tutorial (*shutdown_button*), si lo hechamos a perder basta con correr los archivos de desinstalación y volverlo a instalar.
+Algunos servicios son muy importantes, si jugamos con alguno elemental podriamos hacer que la *RPI* deje de funcionar ( nada del otro mundo solo basta con volver a cargar *Raspbian* a la sd y listo), mi recomendación es solo jugar con el que creamos en este tutorial (*shutdown_button*), si lo hechamos a perder basta con correr los archivos de desinstalación y volverlo a instalar.
 
 ### Desintalación
 
 Si quieres desintalarlo es muy simple, basta con ejecutar el siguiente comando de la carpeta pi-power-button:
 
-	bash uninstal.sh
+	bash uninstall.sh
 
 y listo, se desinstala solito, solo queda la carpeta pi-power-button con tres archivos install, unsintall y LICENCE.
 Si aun asi te quieres deshacerte de todo esto bastara con borrar la carpeta con el siguiente comando:
