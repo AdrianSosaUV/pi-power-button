@@ -79,7 +79,7 @@ exit 0
 sudo mv ~/shutdown_button.sh /etc/init.d/
 sudo chmod +x /etc/init.d/shutdown_button.sh
 
-echo "==>> Activando Botón de encendido <<==\n"
+echo "==>> Activando botón de encendido <<==\n"
 
 sudo systemctl daemon-reload
 sudo systemctl enable shutdown_button
