@@ -2,7 +2,7 @@
 
 set -e 
 clear && reset 
-echo "==>> Instalando Botón de encendido <<==\n"
+echo "==>> Instalando Botón de encendido <<=="
 echo "#!/usr/bin/python
 
 import RPi.GPIO as GPIO
@@ -71,14 +71,14 @@ exit 0
 sudo mv ~/shutdown_button.sh /etc/init.d/
 sudo chmod +x /etc/init.d/shutdown_button.sh
 
-echo "==>> Activando botón de encendido <<==\n"
+echo "==>> Activando botón de encendido <<=="
 
 sudo systemctl daemon-reload
 sudo service shutdown_button start 
 
 #sudo systemctl is-enabled shutdown_button
 
-echo "==>> Limpiando instalación <<==\n"
+echo "==>> Limpiando instalación <<=="
 
 sudo rm -r -f imagenes/ .git 
 sudo rm -f .gitignore README.md 
