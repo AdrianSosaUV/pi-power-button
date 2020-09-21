@@ -2,7 +2,7 @@
 
 En este tutorial te enseñare a instalar un botón de encendido y apagado en tu Raspberry Pi.
 
-Este pequeño manual estara divido en dos partes, pa primera sera el hardware que se va a utilizar el segundo sera el software, 
+Este pequeño manual estara divido en dos partes, la primera sera el hardware que se va a utilizar el segundo sera el software.
 
 ## Hardware
 
@@ -17,7 +17,12 @@ Primero estan los materiales:
 opcional:
 
 1. Thermofill (el color a tu gusto) / cinta de aislar
+1. Protoboard
 
+### Procedimiento:
 
+1. Primero creamos un simple circuito con los cables Dupont y el push button sobre el protoboard:
+
+![Conexión Protoboard](https://raw.githubusercontent.com/AdrianSosaUV/pi-power-button/master/imagenes/protoboard.jpg)
 
 
