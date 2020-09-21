@@ -74,12 +74,15 @@ sudo chmod +x /etc/init.d/shutdown_button.sh
 echo "==>> Activando botón de encendido <<==\n"
 
 sudo systemctl daemon-reload
+sudo service shutdown_button start 
 sudo systemctl enable shutdown_button
-sudo systemctl start shutdown_button
+VAR = $(sudo systemctl is-enabled shutdown_button)
+echo ${VAR}
+
 
 echo "==>> Limpiando instalación <<==\n"
 
-sudo rm -r imagenes/ .git 
-sudo rm .gitignore README.md 
+sudo rm -r -f imagenes/ .git 
+sudo rm -f .gitignore README.md 
 
 
